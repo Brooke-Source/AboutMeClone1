@@ -5,16 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Website</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
-    <header>
+   
+    <header id="myHeading">
         <h1>Brooke Brackett</h1>
-        <img src="Picture of Me.jpeg" alt="My Picture">
+        <div class="hover-text" id="hoverText">Fullstack Developer Baking!</div>
+
+        <img id="myImage" src="Picture of Me.jpeg" alt="My Picture">
+
     </header>
+
     <main>
         <section>
             <h2>Experience with Web Design and Development</h2>
-            <p>The only experience I have with design and development is through the school.</p>
+            <p>The only experience I have with design and development is through the school. <br> <span style="color: red;">Thank goodness for strawberries and cake to fuel my codes!</span></p>
         </section>
         <section>
             <h2>What You Hope to Learn from This Course</h2>
@@ -25,5 +31,10 @@
             <p>While I have some website ideas of my own, my ultimate goal is to acquire remote employment.</p>
         </section>
     </main>
+    <div class="animation-container">
+        <img id="strawberry" class="animated-item" src="strawberrymov.webp" alt="Strawberry">
+        <img id="mouse" class="animated-item" src="cpmouse.webp" alt="Computer Mouse">
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
